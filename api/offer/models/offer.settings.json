@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offers",
+  "info": {
+    "name": "offer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "projects": {
+      "via": "offer",
+      "collection": "wedding"
+    },
+    "Short_Description": {
+      "type": "text"
+    }
+  }
+}

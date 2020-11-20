@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/onas-teams",
+      "handler": "onas-team.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/onas-teams/count",
+      "handler": "onas-team.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/onas-teams/:id",
+      "handler": "onas-team.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/onas-teams",
+      "handler": "onas-team.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/onas-teams/:id",
+      "handler": "onas-team.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/onas-teams/:id",
+      "handler": "onas-team.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

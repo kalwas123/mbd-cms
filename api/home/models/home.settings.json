@@ -1,0 +1,86 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "Page_Home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Header_Title": {
+      "type": "string"
+    },
+    "Companies_Title": {
+      "type": "string"
+    },
+    "Companies_SmallText": {
+      "type": "string"
+    },
+    "Companies_Description": {
+      "type": "richtext"
+    },
+    "Social_Text_1": {
+      "type": "string"
+    },
+    "Social_Text_2": {
+      "type": "string"
+    },
+    "Header_Slider": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Team_Img_1": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Team_Img_2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Companies": {
+      "type": "richtext"
+    },
+    "SEO_Title": {
+      "type": "string",
+      "default": "My Big Day - Dekoracje i kwiaty - śluby, eventy, sesje zdjęciowe",
+      "required": true
+    },
+    "SEO_Description": {
+      "type": "text",
+      "default": "MyBigDay - dekoracje ślubne, scenografie do eventów i sesji zdjęciowych, wypożyczalnia artykułów dekoracyjnych.",
+      "required": true
+    },
+    "SEO_Img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

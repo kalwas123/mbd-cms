@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "onas_teams",
+  "info": {
+    "name": "Team Member"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Position": {
+      "type": "string"
+    }
+  }
+}

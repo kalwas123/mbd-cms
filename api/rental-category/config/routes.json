@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rental-categories",
+      "handler": "rental-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rental-categories/count",
+      "handler": "rental-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rental-categories/:id",
+      "handler": "rental-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rental-categories",
+      "handler": "rental-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rental-categories/:id",
+      "handler": "rental-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rental-categories/:id",
+      "handler": "rental-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/link-brief",
+      "handler": "link-brief.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/link-brief",
+      "handler": "link-brief.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/link-brief",
+      "handler": "link-brief.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_people",
+  "info": {
+    "name": "Contact Person"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Location": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Tel": {
+      "type": "string"
+    },
+    "Mail": {
+      "type": "string"
+    }
+  }
+}

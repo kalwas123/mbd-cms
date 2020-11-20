@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "link_briefs",
+  "info": {
+    "name": "Link_Brief",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

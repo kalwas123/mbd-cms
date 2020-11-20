@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rental_categories",
+  "info": {
+    "name": "Rental_category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "rental_products": {
+      "via": "rental_category",
+      "collection": "rental-product"
+    }
+  }
+}
