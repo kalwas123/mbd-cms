@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "offers",
   "info": {
-    "name": "offer"
+    "name": "offer",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "Title": {
@@ -21,6 +23,11 @@
     },
     "Short_Description": {
       "type": "text"
+    },
+    "Order": {
+      "type": "datetime",
+      "required": true,
+      "unique": true
     }
   }
 }
