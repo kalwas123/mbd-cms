@@ -14,9 +14,6 @@
     "Title": {
       "type": "string"
     },
-    "Description": {
-      "type": "text"
-    },
     "SEO_Title": {
       "type": "string",
       "default": "My Big Day - Dekoracje i kwiaty - śluby, eventy, sesje zdjęciowe",
@@ -34,6 +31,10 @@
         "images"
       ],
       "plugin": "upload",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
       "required": true
     }
   }
